@@ -1,0 +1,11 @@
+local time = 0
+local breakout = 1000 -- you can change this to your liking.
+
+while true do
+game.ReplicatedStorage.removeDebris:FireServer(221)
+wait(0.05) -- you can change this to your liking.
+time = time + 1
+if time == breakout then
+	break
+end
+end
